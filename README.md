@@ -8,7 +8,7 @@ It's often hard to follow which code is which, so I am providing a "map" of wher
 	Start at penguin_RUN
 	(This is the only code you need to run.)
 
-	penguin_RUN -> penguin_ode_solve ; penguin_plots ; penguin_steady_shape_plot
+	penguin_RUN -> penguin_ode_solve ; penguin_error; penguin_plots ; penguin_steady_shape_plot
 	
 		penguin_ode_solve -> penguin_initial_shape ; odeqns
 		
