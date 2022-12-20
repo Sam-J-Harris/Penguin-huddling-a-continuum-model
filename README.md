@@ -17,3 +17,9 @@ It's often hard to follow which code is which, so I am providing a "map" of wher
 				SOCcalc -> sigsolve ; AAA_LS_solve ; adzeta
 	
 		penguin_steady_shape_plot -> centrepoly
+
+All other functions used are either from MATLAB or the chebfun package.
+
+## Function Glossary:
+A brief description of what each function does (in some kind of "running" order).
+
