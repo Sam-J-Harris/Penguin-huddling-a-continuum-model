@@ -23,3 +23,11 @@ All other functions used are either from MATLAB or the chebfun package.
 ## Function Glossary:
 A brief description of what each function does (in some kind of "running" order).
 
+## References:
+For full reference list, see the paper Penguin huddling: a continuum model. References used in the attached code are listed below.
+
+Costa & Trefethen 2021
+Ladd et al. 2020
+Rycroft and Bazant 2016
+Dallaston and McCue 2016
+
