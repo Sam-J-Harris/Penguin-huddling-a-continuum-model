@@ -1,8 +1,8 @@
-## Penguin huddling: a continuum model
+# Penguin huddling: a continuum model
 Supplementary material accompanying the paper "Penguin huddling: a continuum model". The attached MATLAB code outputs the propagation of a penguin huddle boundary and other related free boundary problems.
 
 
-# Map:
+## Map:
 It's often hard to follow which code is which, so I am providing a "map" of where to look.
 
 	Start at penguin_RUN
