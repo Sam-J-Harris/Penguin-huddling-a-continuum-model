@@ -32,5 +32,8 @@ Ladd et al. 2020
 
 Rycroft and Bazant 2016
 
+T. A. Driscoll, N. Hale, L. N. Trefethen, Chebfun Guide. Pafnuty Press, Oxford, 2014;
+see also www.chebfun.org
+
 Dallaston and McCue 2016
 
