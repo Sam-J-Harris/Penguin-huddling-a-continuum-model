@@ -15,6 +15,8 @@ It's often hard to follow which code is which, so I am providing a "map" of wher
 			odeqns -> SOCcalc
 			
 				SOCcalc -> sigsolve ; AAA_LS_solve ; adzeta
+					
+					AAA_LS_solve -> VAevald
 	
 		penguin_steady_shape_plot -> centrepoly
 
