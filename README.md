@@ -1,5 +1,5 @@
 # Penguin huddling: a continuum model
-Supplementary material accompanying the paper "Penguin huddling: a continuum model". The attached MATLAB code outputs the propagation of a penguin huddle boundary and other related free boundary problems. Requires MATLAB and the chebfun package -- see [6] below.
+Supplementary material accompanying [1]. The attached MATLAB code outputs the propagation of a penguin huddle boundary and other related free boundary problems. Requires MATLAB and the chebfun package -- see [6] below.
 
 ## Map:
 It's often hard to follow which code is which, so I am providing a "map" of where to look.
@@ -55,10 +55,12 @@ adzeta: find |dz/dzeta|, for use with the "integrate" function.
 
 VAevald: the function VAeval from chebfun returning only the basis vector for derivatives -- see [6].
 
+centrepoly: centres a polygon around the origin.
+
 ## References:
 For full reference list, see [1]. References used in the attached code are listed below.
 
-[1]	Harris S.J., McDonald N.R. (2023) "Penguin huddling: a continuum model".
+[1]	Harris S.J., & McDonald N.R. (2023) "Penguin huddling: a continuum model".
 
 [2]     Rycroft, C. H., & Bazant, M. Z. (2016). "Asymmetric collapse by dissolution or melting in a uniform flow". Proc. R. Soc. A, 472(2185), 20150531.
 
