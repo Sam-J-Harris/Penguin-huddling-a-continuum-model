@@ -1,6 +1,5 @@
 # Penguin huddling: a continuum model
-Supplementary material accompanying the paper "Penguin huddling: a continuum model". The attached MATLAB code outputs the propagation of a penguin huddle boundary and other related free boundary problems.
-
+Supplementary material accompanying the paper "Penguin huddling: a continuum model". The attached MATLAB code outputs the propagation of a penguin huddle boundary and other related free boundary problems. Requires MATLAB and the chebfun package -- see [6] below.
 
 ## Map:
 It's often hard to follow which code is which, so I am providing a "map" of where to look.
@@ -28,17 +27,47 @@ All other functions used are either from MATLAB or the chebfun package.
 ## Function Glossary:
 A brief description of what each function does (in some kind of "running" order).
 
+penguin_RUN: run this code to obtain the evolution of the free boundary.
+
+penguin_huddling_a_continuum_model: run this code to recreate the figures from [1] (excluding figure 1). 
+
+penguin_ode_solve: produces the free boundary evolution and the canonical and physical heat fluxes of the final free boundary shape.
+
+penguin_error: returns the root mean-squared error and area error for the free boundary shapes. 
+
+penguin_plots: plots the free boundary evolution.
+
+penguin_plots_steady_shape: plots the steady shape (and compares this steady shapes from other experiments).
+
+penguin_plots_heat_flux: three plots of heat flux data across the steady shape.
+
+penguin_initial_shape: returns Laurent coefficients and their derivatives of desired initial boundary shape -- see [2]. 
+
+odeqns: the system of ODEs to be solved by decic/ode15i.
+
+SOCcalc: calculates the exterior, interior and area conserving effects of the Polubarinova-Galin type equation -- see [1].
+
+sigsolve: solves the integral equation governing the exterior effect sigma(theta) -- see [3].
+
+AAA_LS_solve: uses AAA-least squares algorithm to return F'(z) where u=Re(F) is harmonic in the interior -- see [1], [4], [5].
+
+adzeta: find |dz/dzeta|, for use with the "integrate" function.
+
+VAevald: the function VAeval from chebfun returning only the basis vector for derivatives -- see [6].
+
 ## References:
-For full reference list, see the paper Penguin huddling: a continuum model. References used in the attached code are listed below.
+For full reference list, see [1]. References used in the attached code are listed below.
 
-Costa & Trefethen 2021
+[1]	Harris S.J., McDonald N.R. (2023) "Penguin huddling: a continuum model".
 
-Ladd et al. 2020
+[2]     Rycroft, C. H., & Bazant, M. Z. (2016). "Asymmetric collapse by dissolution or melting in a uniform flow". Proc. R. Soc. A, 472(2185), 20150531.
 
-Rycroft and Bazant 2016
+[3]     Ladd, A. J., Yu, L., & Szymczak, P. (2020). "Dissolution of a cylindrical disk in Hele-Shaw flow: a conformal-mapping approach". J. Fluid Mech., 903.
 
-T. A. Driscoll, N. Hale, L. N. Trefethen, Chebfun Guide. Pafnuty Press, Oxford, 2014;
-see also www.chebfun.org
+[4]     Costa, S., & Trefethen, L. N. (2021). "AAA-least squares rational approximation and solution of Laplace problems". arXiv preprint arXiv:2107.01574.
 
-Dallaston and McCue 2016
+[5]     Nakatsukasa Y., Sete 0., Trefethen L.N. (2018) "The AAA algorithm for rational approximation". SIAM J. Sci. Comp. 40, A1494-A1522.
+
+[6]	T. A. Driscoll, N. Hale, L. N. Trefethen, Chebfun Guide. Pafnuty Press, Oxford, 2014; see also www.chebfun.org.
+
 
