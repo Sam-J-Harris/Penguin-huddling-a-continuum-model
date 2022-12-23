@@ -8,9 +8,9 @@ It's often hard to follow which code is which, so I am providing a "map" of wher
 	Start at penguin_RUN
 	(This is the only code you need to run.)
 
-	penguin_RUN -> penguin_ode_solve ; penguin_error; penguin_plots ; penguin_steady_shape_plot
+	penguin_RUN -> penguin_ode_solve ; penguin_error; penguin_plots ; penguin_plots_steady_shape ; penguin_plots_heat_flux
 	
-		penguin_ode_solve -> penguin_initial_shape ; odeqns
+		penguin_ode_solve -> penguin_initial_shape ; odeqns ; sigsolve ; AAA_LS_solve
 		
 			odeqns -> SOCcalc
 			
@@ -18,7 +18,10 @@ It's often hard to follow which code is which, so I am providing a "map" of wher
 					
 					AAA_LS_solve -> VAevald
 	
-		penguin_steady_shape_plot -> centrepoly
+		penguin_plots_steady_shape ; penguin_plots_heat_flux -> centrepoly
+
+
+	To recreate the figures from the paper, run the code: penguin_huddling_a_continuum_model
 
 All other functions used are either from MATLAB or the chebfun package.
 
