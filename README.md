@@ -1,13 +1,14 @@
 # Penguin huddling: a continuum model
+CODE WILL BE MADE AVAILABLE UPON PUBLICATION.
 Supplementary material accompanying [1]. The attached MATLAB code outputs the propagation of a penguin huddle boundary and other related free boundary problems. Requires MATLAB and the chebfun package -- see [6] below.
 
 ## Map:
 It's often hard to follow which code is which, so I am providing a "map" of where to look.
 
-	Start at penguin_RUN
+	Start at A1_penguin_RUN
 	(This is the only code you need to run.)
 
-	penguin_RUN -> penguin_ode_solve ; penguin_error; penguin_plots ; penguin_plots_steady_shape ; penguin_plots_heat_flux
+	A1_penguin_RUN -> penguin_ode_solve ; penguin_error; penguin_plots ; penguin_plots_steady_shape ; penguin_plots_heat_flux
 	
 		penguin_ode_solve -> penguin_initial_shape ; odeqns ; sigsolve ; AAA_LS_solve
 		
@@ -17,17 +18,18 @@ It's often hard to follow which code is which, so I am providing a "map" of wher
 					
 					AAA_LS_solve -> VAevald
 	
-		penguin_plots_steady_shape ; penguin_plots_heat_flux -> centrepoly
+		penguin_plots_steady_shape ; penguin_plots_heat_flux; penguin_plots_aspect_ratio -> centrepoly
 
 
-	To recreate the figures from the paper, run the code: penguin_huddling_a_continuum_model
+	All MATLAB data used in [1] is contained in the file Z1_figures_2-8_penguin_huddling_a_continuum_model.
+	To recreate figure i from [1] - where i=2,3,...8 - run the code: Zi_figure_i_penguin_huddling_a_continuum_model.
 
 All other functions used are either from MATLAB or the chebfun package.
 
 ## Function Glossary:
 A brief description of what each function does (in some kind of "running" order).
 
-penguin_RUN: run this code to obtain the evolution of the free boundary.
+A1_penguin_RUN: run this code to obtain the evolution of the free boundary.
 
 penguin_huddling_a_continuum_model: run this code to recreate the figures from [1] (excluding figure 1). 
 
@@ -54,6 +56,8 @@ AAA_LS_solve: uses AAA-least squares algorithm to return F'(z) where u=Re(F) is 
 adzeta: find |dz/dzeta|, for use with the "integrate" function.
 
 VAevald: the function VAeval from chebfun returning only the basis vector for derivatives -- see [6].
+
+penguin_plots_aspect_ratio: plots the aspect ratio (AR) of the steady shape vs a parameter, either Pe or beta.
 
 centrepoly: centres a polygon around the origin.
 
