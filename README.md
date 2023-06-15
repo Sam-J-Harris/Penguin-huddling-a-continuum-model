@@ -1,5 +1,4 @@
 # Penguin huddling: a continuum model
-CODE WILL BE MADE AVAILABLE UPON PUBLICATION.
 Supplementary material accompanying [1]. The attached MATLAB code outputs the propagation of a penguin huddle boundary and other related free boundary problems. Requires MATLAB and the chebfun package -- see [6] below.
 
 ## Map:
@@ -19,10 +18,6 @@ It's often hard to follow which code is which, so I am providing a "map" of wher
 					AAA_LS_solve -> VAevald
 	
 		penguin_plots_steady_shape ; penguin_plots_heat_flux; penguin_plots_aspect_ratio -> centrepoly
-
-
-	All MATLAB data used in [1] is contained in the file Z1_figures_2-8_penguin_huddling_a_continuum_model.
-	To recreate figure i from [1] - where i=2,3,...8 - run the code: Zi_figure_i_penguin_huddling_a_continuum_model.
 
 All other functions used are either from MATLAB or the chebfun package.
 
@@ -64,7 +59,7 @@ centrepoly: centres a polygon around the origin.
 ## References:
 For full reference list, see [1]. References used in the attached code are listed below.
 
-[1]	Harris S.J., & McDonald N.R. (2023) "Penguin huddling: a continuum model".
+[1]	Harris, S.J., McDonald, N.R. (2023) "Penguin Huddling: A Continuum Model". Acta Appl. Math. 185, 7. https://doi.org/10.1007/s10440-023-00578-2.
 
 [2]     Rycroft, C. H., & Bazant, M. Z. (2016). "Asymmetric collapse by dissolution or melting in a uniform flow". Proc. R. Soc. A, 472(2185), 20150531.
 
